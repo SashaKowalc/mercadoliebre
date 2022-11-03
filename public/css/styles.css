@@ -1,0 +1,437 @@
+:root {
+    --light-blue: #1259c3;
+    --gray: #666;
+    --light-gray: #ebebeb;
+    --green: #39b54a;
+    --blue: #03264c;
+    --yellow: #eac926;
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+} 
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background-color: #ebebeb;
+    margin: 0;
+}
+
+.fa, .fas {
+    font-weight: 900;
+}
+
+.fa, .fas, .fab, .fal, .far, .fad {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+/*---------------------------------------- HEADER ----------------------------------------------------*/
+header {
+    background-color: #EAC926;
+}
+
+nav.top-header{
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header div.logo{
+    padding: 10px;
+    width: 50%;
+}
+
+.form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 0px 10px 0px 10px;
+}
+
+header .form input.search-bar{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+header .form div.submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/*---------------------------------------------- BARRA NAVEGADORA --------------------------------------------*/
+.nav-links {
+    font-size: 12px;
+    display: none;
+}
+
+.nav-links ul {
+    list-style: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+/*---------------------------------------- BURGER MENU ----------------------------------------------*/
+div.burger-menu {
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+/*------------------------------------------ BANNER ---------------------------------------------*/
+section.banner img{
+    width: 100%;
+}
+
+/*------------------------------------------ MAIN ----------------------------------------------*/
+h2 {
+    font-size: 24px;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*--------------------------------------- ULTIMA VISITA Y OFERTAS -------------------------------------------*/
+main section h3{
+    margin: 20px 0px;
+}
+
+.main-article {
+    position: relative;
+}
+
+article.card {
+    position: relative;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+article div.main-article{
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+}
+
+.price{
+    font-size: 18px;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+.description{
+    display: block;
+    margin-top: 20px;
+    visibility: hidden;
+}
+
+.card:hover .description{
+    visibility: visible;
+}
+
+.card:hover i.fas.fa-truck{
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transition: all 1.5s;
+    -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    -ms-transition: all 1.5s;
+    -o-transition: all 1.5s;
+}
+
+
+
+/*--------------------------------------- FOOTER -------------------------------------------*/
+
+.main-footer {
+    background-color: #ffffff;
+    padding: 20px 0;
+    margin-top: 80px;
+}
+
+.footer-data {
+    text-align: center;
+}
+
+.footer-data i {
+    color: var(--light-blue);
+    font-size: 2em;
+    padding: 10px 0;
+}
+
+.footer-data h2 {
+    color: var(--gray);
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.footer-data p {
+    color: var(--gray);
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.sub-footer {
+    border-top: 1px solid var(--light-gray);
+    background-color: #ffffff;
+}
+
+.sub-footer p {
+    margin: 0;
+    color: var(--gray);
+    padding: 15px 0;
+}
+
+/*------------------------------------ FORMULARIOS ----------------------------------------*/
+
+.register, .login{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: solid 1px;
+    margin: auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0,0,0 / 30%);
+}
+
+.login .btn-login:hover {
+    background-color: #0022aa;
+}
+
+.form-group {
+    margin: 15px;
+    width: 90%;
+}
+
+/*------------------------------------ FORMULARIOS DE TEXTO ----------------------------------------*/
+/*.form-register {
+    
+} */
+
+/*------------------------------------ BOTONES ----------------------------------------*/
+button {
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    -webkit-box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ffffff;
+            box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ffffff;
+}
+
+button:active {
+    color: #666;
+    -webkit-box-shadow: inset 4px 4px 12px #c5c5c5,
+                inset -4px -4px 12px #ffffff;
+            box-shadow: inset 4px 4px 12px #c5c5c5,
+                inset -4px -4px 12px #ffffff;
+}
+
+
+
+
+/*------------------------------------ MEDIA TABLET ----------------------------------------*/
+@media (min-width: 361px) {
+
+    /*---------------------- TABLET - HEADER ----------------------*/
+    div.top-header{
+        display: flex;
+        width: 100vw;
+        justify-content: space-around;   
+    }
+    
+    div.logo{
+        display: flex;
+        width: 23%;
+        max-height: 279px;
+    }
+
+    .form {
+        height: min-content;
+        margin-top: 15px;
+        display: flex;
+        width: 33%;
+    }
+
+    header div.top-header p{
+        display: flex;
+        width: 43%;
+    }
+
+    nav.nav-links {
+        display: flex;
+        padding: 0px 0px 10px 0px;
+        justify-content: space-around;
+    }
+
+    nav.nav-links .nav-links-right {
+        display: flex;
+        width: 50%;
+        justify-content: flex-end;
+        margin-right: 5%;
+        flex-wrap: wrap;
+    }
+
+    nav.nav-links .nav-links-left {
+        display: flex;
+        width: 50%;
+        justify-content: flex-start;
+        margin-left: 5%;
+        flex-wrap: wrap;
+    }
+    
+    a {
+        margin-left: 20px;
+    }
+
+    div.burger-menu{
+        display: none;
+    }
+
+    /*---------------------- TABLET - MAIN ----------------------*/
+    div.products {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main section article{
+        display: flex;
+        width: 50%;
+
+    }
+
+    main section article .description{
+        display: block;
+    }
+
+    main section article .description:hover{
+        display: block;
+    }
+
+    
+}
+
+/*----------------------------------------- MEDIA PC ------------------------------------------------*/
+@media (min-width: 769px) {
+    /*---------------------- MEDIA PC - MAIN ----------------------*/
+    main section article {
+        width: 25%;
+    }
+    /*---------------------- MEDIA PC - FOOTER ----------------------*/
+    .main-footer {
+        padding: 40px 0;
+    }
+
+    .footer-data {
+        width: 95%;
+        margin: auto;
+    }
+
+    .footer-data i {
+        color: var(--light-blue);
+        font-size: 2.5em;
+    }
+
+    .footer-data h2 {
+        color: var(--gray);
+        font-size: 2em;
+        font-weight: 400;
+    }
+
+    .footer-data p {
+        color: var(--gray);
+        font-size: 1.2em;
+        font-weight: 300;
+    }
+
+    .footer-data i:hover {
+        color: var(--green);
+    }
+}
+
+
