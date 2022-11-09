@@ -19,6 +19,9 @@ body {
     font-size: 12px;
     background-color: #ebebeb;
     margin: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .fa, .fas {
@@ -47,27 +50,32 @@ nav.top-header{
 header div.logo{
     padding: 10px;
     width: 50%;
+    max-width: 250px;
 }
 
-.form {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    margin: 0px 10px 0px 10px;
+form.form-search {
+    display: block;
+    width: 100vw;
+    padding: 10px;
+    max-width: 250px;
 }
 
-header .form input.search-bar{
+header .form-search input.search-bar{
     background-color: #FFF;
     border: 1px solid #000;
     outline: none;
     color: #666;
     padding: 2px;
+    width: 80%;
+    max-width: 200px;
 }
-header .form div.submit{
+header .form-search div.submit{
+    display: inline-block;
     background-color: #FFF;
     border: 1px solid #000;
     color: #666;
-    width: 10%;
+    width: 16px;
+    height: 20px;
 }
 
 header div.top-header p{
@@ -133,6 +141,7 @@ main section h3{
 
 article.card {
     position: relative;
+    max-height: 500px;
 }
 
 main section article{
@@ -316,7 +325,7 @@ button:active {
 
 
 /*------------------------------------ MEDIA TABLET ----------------------------------------*/
-@media (min-width: 361px) {
+@media (min-width: 426px) {
 
     /*---------------------- TABLET - HEADER ----------------------*/
     div.top-header{
@@ -331,16 +340,19 @@ button:active {
         max-height: 279px;
     }
 
-    .form {
+    .form-search {
         height: min-content;
-        margin-top: 15px;
+        margin-top: 16px;
         display: flex;
         width: 33%;
+        margin-left: 50px;
     }
 
     header div.top-header p{
         display: flex;
         width: 43%;
+        margin-left: 50px;
+        margin-top: 30px;
     }
 
     nav.nav-links {
@@ -377,12 +389,12 @@ button:active {
     div.products {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
     }
 
-    main section article{
+    article.card{
         display: flex;
-        width: 50%;
-
+        width: 48%;
     }
 
     main section article .description{
@@ -398,9 +410,14 @@ button:active {
 
 /*----------------------------------------- MEDIA PC ------------------------------------------------*/
 @media (min-width: 769px) {
+    /*---------------------- MEDIA PC - HEADER ----------------------*/
+
+
+
+
     /*---------------------- MEDIA PC - MAIN ----------------------*/
-    main section article {
-        width: 25%;
+    article.card {
+        width: 24%;
     }
     /*---------------------- MEDIA PC - FOOTER ----------------------*/
     .main-footer {
